@@ -1,0 +1,23 @@
+:root {
+    --purple: #8E5784;
+    --orange: #FFA500;
+    --green: #87C66D;
+    --pink: #E0B0E5;
+    --navbar-height: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-margin {
+    margin-top: var(--navbar-height);
+}
