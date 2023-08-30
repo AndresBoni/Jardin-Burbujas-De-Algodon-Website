@@ -1,7 +1,6 @@
 .header {
     background-image: linear-gradient(#8D79C5, #ffffff00);
-    margin-top: var(--navbar-height); 
-    min-height: calc(98vh - (var(--navbar-height))); 
+    min-height: calc(97vh - (var(--navbar-height))); 
     color: white;
 }
 

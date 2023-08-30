@@ -12,7 +12,7 @@ const Header = () => {
             <span className='text-header-2 py-2'>&lt;&lt;Burbujas de algodón&gt;&gt;</span>
             <span className='text-header-3 py-2'>¡Bienvenidos a nuestro cálido y estimulante jardín de infantes! Aquí, cada niño es una semilla lista para crecer y florecer en un ambiente educativo lleno de alegría y descubrimiento.</span>
             <a href='#contacto' className='d-flex align-self-center'>
-              <button type="button" class="btn btn-outline-success rounded mt-4 ">Contáctanos</button>
+              <button type="button" class="btn btn-outline-secondary rounded-pill mt-4 px-4 py-2 ">Contáctanos</button>
             </a>
           </div>
           <div className="col-12 col-md-8">

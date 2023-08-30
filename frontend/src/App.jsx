@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Menu from './components/Menu'
 import Header from './components/Header'
 import Programas from './components/Programas'
 import Instalaciones from './components/Instalaciones'
@@ -13,7 +13,7 @@ import './App.css'
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Menu />
       <Header />
       <Programas />
       <Instalaciones />

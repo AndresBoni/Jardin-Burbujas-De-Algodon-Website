@@ -14,10 +14,10 @@
     font-weight: 300;
 }
 
+html {
+    scroll-padding-top: 104px; /* prevent menu over content when scroll */
+  }
+
 a {
     text-decoration: none;
-}
-
-.navbar-margin {
-    margin-top: var(--navbar-height);
 }
