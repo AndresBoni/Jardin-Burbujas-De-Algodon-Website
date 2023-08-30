@@ -5,14 +5,15 @@
 }
 
 .text-header-1{
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 .text-header-2{
     color: #FFD700;
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .text-header-3{
-    font-size: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
