@@ -2,14 +2,34 @@ import React from 'react'
 
 const Contacto = () => {
   return (
-    <div className='container' id='contacto'>
-      <div className="row d-flex justify-content-center">
-        Contacto
+
+
+    <>
+    <div classname='container section mt-5' id='Contacto'>
+      <div classnameN='row d-flex justify-content-center'>
+        <div classname='tittle-shape4'>
+          <div className='tittle d-flex text-nowrap'>
+            Contancto
+          </div>
+        </div>
       </div>
-      <div className="row">
-      
-      </div>
+
     </div>
+
+
+    {/* formulario */}
+
+
+    
+
+
+
+
+
+
+
+   </>
+
   )
 }
 

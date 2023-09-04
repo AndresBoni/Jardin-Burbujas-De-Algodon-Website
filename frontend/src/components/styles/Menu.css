@@ -7,6 +7,8 @@
     position: fixed;
     z-index: 1000;
     position: sticky;
+
+    
 }
 
 .logo-img{
@@ -44,4 +46,4 @@
     .logo-font {
       display: none;
     }
-  }
+}
