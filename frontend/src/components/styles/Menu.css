@@ -8,7 +8,7 @@
     z-index: 1000;
     position: sticky;
     
-
+}
 .logo-img{
     background-color:  #8E5784;
     border-radius: 50%;
@@ -44,4 +44,4 @@
     .logo-font {
       display: none;
     }
-  }
+}
