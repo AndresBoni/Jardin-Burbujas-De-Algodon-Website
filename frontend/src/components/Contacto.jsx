@@ -13,6 +13,7 @@ const Contacto = () => {
           </div>
         </div>
       </div>
+
     </div>
 
 
@@ -28,6 +29,7 @@ const Contacto = () => {
 
 
    </>
+
   )
 }
 

@@ -25,6 +25,7 @@ const Equipo = () => {
           </div>
         </div>
       </div>
+
     </div>
 
     {/* card de profesores */}
@@ -100,6 +101,7 @@ const Equipo = () => {
       
 
   </>
+
 
 
 

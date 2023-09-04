@@ -22,6 +22,7 @@ const Noticias = () => {
           </div>
         </div>
       </div>
+
     </div>
    
 
@@ -80,6 +81,7 @@ const Noticias = () => {
   
   
   </>
+
 
 
 
