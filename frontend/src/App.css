@@ -5,7 +5,8 @@
     --green: #269771;
     --pink: #F2547D;
     --yellow: #FECB1F;
-    --navbar-height: 100px;
+    --black: #434343;
+    --navbar-height: 98px;
 }
 
 .purple { color: var(--purple);}
@@ -28,6 +29,7 @@ body{
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    color: var(--black)
 }
 
 a {
