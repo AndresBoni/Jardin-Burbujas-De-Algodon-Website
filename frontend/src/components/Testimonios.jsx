@@ -7,10 +7,8 @@ const Testimonios = () => {
   return (
     <div className='container my-4' id='testimonios'>
       <div className="row d-flex justify-content-center">
-        <div className="title-shape my-4">
-          <div className="title d-flex text-nowrap">
-            Testimonios
-          </div>
+        <div className="col-auto title">
+          Testimonios
         </div>
       </div>
       <div className="row d-flex justify-content-evenly ">

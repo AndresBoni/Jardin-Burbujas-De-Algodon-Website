@@ -1,17 +1,23 @@
 :root {
-    --purple: #8E5784;
-    --orange: #FFA500;
-    --green: #87C66D;
-    --pink: #E0B0E5;
+    --purple: #A958CD;
+    --orange: #F8911E;
+    --teal: #219EBC;
+    --green: #269771;
+    --pink: #F2547D;
+    --yellow: #FECB1F;
     --navbar-height: 100px;
 }
+
+.purple { color: var(--purple);}
+.orange { color: var(--orange);}
+.teal { color: var(--teal);}
+.green { color: var(--green);}
+.yellow { color: var(--yellow);}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
 }
 
 html {
@@ -20,28 +26,18 @@ html {
 
 body{
     overflow-x: hidden;
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
 }
 
-.title-shape {
-    position: relative;
-    background-color: var(--orange);
-    border-radius: 23px;
-    padding: 16px;
-    width: 298px;
-    margin-bottom: 30px;
-}
-
 .title {
-    position: absolute;
-    top: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    font-weight: 600;
-    color: #434343;
+    color: var(--orange);
+    font-size: 2.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    margin: 1rem auto;
 }
