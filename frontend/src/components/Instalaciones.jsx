@@ -30,6 +30,7 @@ const Instalaciones = () => {
           </div>
         </div>
       </div>
+
     </div>
 
     {/* PARRAFO */}
@@ -91,6 +92,7 @@ const Instalaciones = () => {
 
 
     
+
   )
 }
 

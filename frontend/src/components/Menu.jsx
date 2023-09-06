@@ -21,7 +21,7 @@ const Menu = () => {
               <span>algodón</span>
             </span>
         </Navbar.Brand>
-        <Nav className="align-items-center order-lg-last d-none d-md-block">
+        <Nav className="align-items-center order-lg-last d-none d-xl-block">
             <Nav.Link href="#contacto">
             <button
                   type="button"
