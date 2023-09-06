@@ -1,40 +1,40 @@
 .menu {
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    position: sticky;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  position: sticky;
 }
 
-.logo-img{
-    background-color:  var(--orange);
-    border-radius: 50%;
-    padding: 5px;
-    margin-left: 12px;
-    fill: linear-gradient(0deg, var(--orange) 0%, var(--orange) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.logo-img {
+  background-color: var(--orange);
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 12px;
+  fill: linear-gradient(0deg, var(--orange) 0%, var(--orange) 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .logo-font {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.9rem;
-    font-weight: 900;
-    background: linear-gradient(90deg, #F9911D 0%, #F2547D 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #f9911d 0%, #f2547d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-nav .nav-link {
-    color: var(--teal) !important;
-    font-size: 0.8rem;
-    padding-left: 30px !important;
-    font-weight: 500;
+  color: var(--teal) !important;
+  font-size: 0.8rem;
+  padding-left: 30px !important;
+  font-weight: 500;
 }
 .navbar-nav .nav-link:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: var(--teal);
 }

@@ -1,51 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-
-
-
-.tittle-shape1 {
-    position: relative;
-    background-color: #E0B0E5;
-    border-radius: 23px;
-    padding: 16px;
-    width: 298px;
-    margin-bottom: 30px;
-
+.img-programa {
+  width: auto;
+  height: 296;
+  border-radius: 25;
 }
 
-.imagenes-colores {
-
-    display: contents;
+.encabezado-texto-programas {
+  color: var(--teal);
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-.centrado {
-
-    align-items: center;
-}
-
-.separacion-imagen {
-
-    margin: 5px;
-}
-
-.tamaño-imagen img{
-
-    Width:229px
-    
-
-}
-
-.texto-fuente{
-    font-family: 'Poppins', sans-serif;
-    
-
-}
-
-.texto-fuente h2 {
-    color: #8E5784;
-    font-size: 36px;
-    font-family: 'Poppins', sans-serif;
-
-
+.texto-programas {
+  font-size: 0.8rem;
 }

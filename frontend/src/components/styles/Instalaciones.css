@@ -1,25 +1,19 @@
 .tittle-shape {
-    position: relative;
-    background-color: #C2E9FA;
-    border-radius: 23px;
-    padding: 16px;
-    width: 298px;
-    margin-bottom: 30px;
-
+  position: relative;
+  background-color: #c2e9fa;
+  border-radius: 23px;
+  padding: 16px;
+  width: 298px;
+  margin-bottom: 30px;
 }
 
 .tittle {
-
-    position: absolute;
-    top: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    font-weight: 600;
-    color: #434343;
-    margin-top: -10px;
-}
-
-.m-50{
-    margin: 50px;
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  color: #434343;
+  margin-top: -10px;
 }
