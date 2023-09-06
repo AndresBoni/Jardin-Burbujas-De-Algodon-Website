@@ -1,99 +1,94 @@
-import React from 'react'
-import "./styles/Instalaciones.css"
-import foto1 from "../assets/img/frame 10.jpg"
-import foto2 from "../assets/img/frame 11.jpg"
-import foto3 from "../assets/img/frame 12.jpg"
-import foto4 from "../assets/img/frame 13.jpg"
-import foto5 from "../assets/img/frame 14.jpg"
-import foto6 from "../assets/img/frame 15.jpg"
-import foto7 from "../assets/img/frame 16.jpg"
-import foto8 from "../assets/img/frame 17.jpg"
-import foto9 from "../assets/img/frame 18.jpg"
-import foto10 from "../assets/img/frame 19.jpg"
-import foto11 from "../assets/img/frame 20.png"
-import foto12 from  "../assets/img/frame 21.jpg"
-
-
-
+import React from "react";
+import "./styles/Instalaciones.css";
+import foto1 from "../assets/img/imgInstalaciones1.png";
+import foto2 from "../assets/img/imgInstalaciones2.png";
+import foto3 from "../assets/img/imgInstalaciones3.png";
+import foto4 from "../assets/img/imgInstalaciones4.png";
+import foto5 from "../assets/img/imgInstalaciones5.png";
+import foto6 from "../assets/img/imgInstalaciones6.png";
+import foto7 from "../assets/img/imgInstalaciones7.png";
+import foto8 from "../assets/img/imgInstalaciones8.png";
+import foto9 from "../assets/img/imgInstalaciones9.png";
+import foto10 from "../assets/img/imgInstalaciones10.png";
+import foto11 from "../assets/img/imgInstalaciones11.png";
+import foto12 from "../assets/img/imgInstalaciones12.png";
 
 const Instalaciones = () => {
   return (
-    <> 
-
-    {/* TITULO CON FONDO */}
-     
-    <div className='container section mt-5' id='instalaciones'>
-      <div className='row d-flex justify-content-center'>
-        <div className='tittle-shape'>
-          <div className='tittle d-flex text-nowrap'>
-            Instalaciones
-          </div>
+    <div className="container section" id="instalaciones">
+      <div className="row d-flex justify-content-center">
+        <div className="col-auto title">Instalaciones</div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          Te mostramos fotografías de las aulas, áreas de juego y otros espacios
+          recreativos para que puedan disfrutar aprendiendo al máximo
         </div>
       </div>
-
+      <div className="row row-cols-2 row-cols-sm-4 row-cols-md-6">
+        <img
+          src={foto1}
+          className="img-fluid p-3"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto2}
+          className="img-fluid p-3"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto3}
+          className="img-fluid p-3"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto4}
+          className="img-fluid p-3"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto5}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto6}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto7}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto8}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto9}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto10}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto11}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+        <img
+          src={foto12}
+          className="img-fluid p-3 d-none d-md-block"
+          alt="imagen nuestras instalaciones"
+        />
+      </div>
     </div>
+  );
+};
 
-    {/* PARRAFO */}
-    <div class="container text-center">
-  <div class="row">
-    <div class="col align-self-center">
-      <p>Te mostramos fotografías de las aulas, áreas de juego y otros espacios recreativos para que puedan disfrutar aprendiendo al máximo</p>
-    </div>
-  </div>
-</div>
-
-   {/* CARD DE IMAGENES */}
-
-     
-   <div className='container py-4 img-fluid'>
-      <div className='row'>
-       <div className='d-flex'>
-         <div className='mx-3'>
-         <img src={foto1} className='mx-3 my-5 img-fluid' alt="" />
-         </div>
-         <div className='mx-3'>
-         <img src={foto2} className='mx-3 my-5 img-fluid' alt="" />
-
-         </div>
-         <div className='mx-3'>
-         <img src={foto3} className='mx-3 my-5 img-fluid' alt="" />
-
-         </div>
-         <div className='mx-3'>
-         <img src={foto4} className='mx-3 my-5 img-fluid' alt="" />
-        </div>
-        <div className='mx-3'>
-        <img src={foto5} className='mx-3 my-5 img-fluid' alt="" />
-        </div>
-        <div className='mx-3'>
-        <img src={foto6} className='mx-3 my-5 img-fluid' alt="" />
-
-        </div>
-      </div> 
-         
-         <div className='row'>
-           <div className='col d-flex'>
-             <img src={foto8} className='mx-3  my-5 img-fluid ' alt="" />
-              <img src={foto9} className='mx-3 my-5 img-fluid' alt="" />
-              <img src={foto10} className='mx-3  my-5 img-fluid' alt="" />
-              <img src={foto11} className='mx-3 my-5 img-fluid' alt="" />
-              <img src={foto12} className='mx-3  my-5 img-fluid' alt="" />
-         </div>
-         </div> 
-         </div>
-   </div>
-   
-
-
-
-
-
-   </> 
-
-
-    
-
-  )
-}
-
-export default Instalaciones
+export default Instalaciones;

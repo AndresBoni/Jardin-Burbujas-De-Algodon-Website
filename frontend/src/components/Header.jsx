@@ -1,28 +1,39 @@
-import React from 'react'
-import './styles/Header.css'
-import imgJirafa from '../assets/hero_Img.png'
+import React from "react";
+import "./styles/Header.css";
+import imgNinios from "../assets/img-ninos.png";
 
 const Header = () => {
   return (
-    <div className='container-fluid p-0 navbar-margin header d-flex flex-column flex-grow-1' id='header'>
-      <div className="container d-flex flex-column flex-grow-1 p-0">
-        <div className="row d-flex flex-grow-1 ps-4">
-          <div className="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center pb-4 pt-4 gap-3 mb-4 flex-wrap">
-            <span className='text-header-1 pb-2'>Educación y crecimiento: donde los niños son nuestro futuro</span>
-            <span className='text-header-2 py-2'>&lt;&lt;Burbujas de algodón&gt;&gt;</span>
-            <span className='text-header-3 pt-2'>¡Bienvenidos a nuestro cálido y estimulante jardín de infantes! Aquí, cada niño es una semilla lista para crecer y florecer en un ambiente educativo lleno de alegría y descubrimiento.</span>
-            <a href='#contacto' className='d-flex pb-4'>
-              <button type="button" class="btn btn-outline-secondary rounded-pill mt-4 px-4 py-2 ">Contáctanos</button>
-            </a>
-          </div>  
-          <div className="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center pb-4">
-            <img src={imgJirafa} alt="Imagen Jirafa" className="img-fluid" />
+    <div
+      className="container-fluid header navbar-margin d-flex p-0"
+      id="header"
+    >
+      <div className="row p-0 m-0 d-flex justify-content-end ">
+        <div className="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start gap-4 text-center text-lg-start">
+          <span className="text-brand">Playground</span>
+          <span className="text-slogan">
+            Donde los niños son nuestro futuro
+          </span>
+          <div className="row d-flex col-12 col-sm-10 col-md-10 col-lg-12">
+            <div className="text text-wrap p-3 ">
+              ¡Bienvenidos a nuestro cálido y estimulante{" "}
+              <b>Instituto Playground!</b>
+              <br />
+              Aquí, cada niño es una semilla lista para crecer y florecer en un
+              ambiente educativo lleno de alegría y descubrimiento.
+            </div>
           </div>
+          <button className="btn btn-orange rounded-pill d-flex justify-content-center my-4">
+            Contáctanos
+          </button>
         </div>
-        
+        <div className="col-12 col-lg-6 justify-content-center p-0">
+          {/* Imagen */}
+          <img src={imgNinios} alt="Imagen niña" className="img-header " />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

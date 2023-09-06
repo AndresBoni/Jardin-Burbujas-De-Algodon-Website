@@ -15,8 +15,9 @@ const Contacto = () => {
           </div>
         </div>
       </div>
-
     </div>
+  
+
 
 
     {/* formulario */}
