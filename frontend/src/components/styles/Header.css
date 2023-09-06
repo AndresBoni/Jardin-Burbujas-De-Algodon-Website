@@ -1,6 +1,7 @@
 .header {
     background: linear-gradient(81deg, #CFE5EA 0%, #C1E0E7 60.42%, #67B0C0 100%);
-    min-height: calc(94vh - (var(--navbar-height))); 
+    min-height: calc(94vh - (var(--navbar-height)));
+    margin-bottom: 2.4rem;
 }
 
 .container-header {
@@ -8,26 +9,22 @@
 }
 
 .text-brand {
-    font-size: 7rem;
+    font-size: 4.5em;
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
     color: #209EBC;
-    margin-top: -72px;
 }
 
 .text-slogan {
     color: #209EBC;
     font-size: 1.7rem;
     font-weight: 400;
-    margin-bottom: 2rem;
 }
 
 .text {
     border-left: 4px var(--orange) solid;
-    padding: 18px;
-    width: 80%;
+    margin-left: 1rem;
     font-size: 0.9rem;
-    margin-bottom: 2rem;
 }
 
 .btn-orange {
@@ -46,6 +43,9 @@
     font-weight: 500;
     width: 30%;
     padding: 8px 12px;
+}
 
-    
+.img-header{
+    height: 100%;
+    width: 100%;
 }
