@@ -1,51 +1,61 @@
 .header {
-    background: linear-gradient(81deg, #CFE5EA 0%, #C1E0E7 60.42%, #67B0C0 100%);
-    min-height: calc(94vh - (var(--navbar-height)));
-    margin-bottom: 2.4rem;
+  background: linear-gradient(81deg, #cfe5ea 0%, #c1e0e7 60.42%, #67b0c0 100%);
+  min-height: calc(94vh - (var(--navbar-height)));
+  margin-bottom: 2.4rem;
 }
 
 .container-header {
-    min-height: calc(94vh - (var(--navbar-height))); 
+  min-height: calc(94vh - (var(--navbar-height)));
 }
 
 .text-brand {
-    font-size: 4.5em;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 900;
-    color: #209EBC;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  color: #209ebc;
+}
+
+.text-brand {
+  font-size: 5rem;
+  @media (max-width: 576px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 280px) {
+    font-size: 2rem;
+  }
 }
 
 .text-slogan {
-    color: #209EBC;
-    font-size: 1.7rem;
-    font-weight: 400;
+  color: #209ebc;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .text {
-    border-left: 4px var(--orange) solid;
-    margin-left: 1rem;
-    font-size: 0.9rem;
+  border-left: 4px var(--orange) solid;
+  margin-left: 1rem;
+  font-size: 0.9rem;
 }
 
 .btn-orange {
-    background-color: var(--orange);
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 500;
-    width: 30%;
-    padding: 8px 12px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 30%;
+  padding: 8px 12px;
 }
 
 .btn-orange:hover {
-    background-color: var(--orange);
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 500;
-    width: 30%;
-    padding: 8px 12px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 30%;
+  padding: 8px 12px;
 }
 
-.img-header{
-    height: 100%;
-    width: 100%;
+.img-header {
+  height: 100%;
+  width: 100%;
 }

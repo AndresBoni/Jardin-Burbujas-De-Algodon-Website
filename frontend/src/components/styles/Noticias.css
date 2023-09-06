@@ -1,9 +1,9 @@
 .card-noticia {
-    background-color: #F2547D;
-    border-radius: 25px;
-    color: white;
+  background-color: #f2547d;
+  border-radius: 25px;
+  color: white;
 }
 
 .card-noticia span {
-    margin: 1.3rem;
+  margin: 1.3rem;
 }

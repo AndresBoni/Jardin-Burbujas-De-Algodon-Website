@@ -5,7 +5,7 @@ import imgTestimonio2 from "../assets/imgTestimonio2.png";
 
 const Testimonios = () => {
   return (
-    <div className="container my-4" id="testimonios">
+    <div className="container section" id="testimonios">
       <div className="row d-flex justify-content-center">
         <div className="col-auto title">Testimonios</div>
       </div>
