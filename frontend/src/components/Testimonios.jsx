@@ -10,7 +10,7 @@ const Testimonios = () => {
         <div className="col-auto title">Testimonios</div>
       </div>
       <div className="row d-flex justify-content-evenly align-items-center my-4">
-        <div className="col-auto d-none d-sm-block">
+        <div className="col-auto order-2 order-md-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="106"
@@ -27,8 +27,8 @@ const Testimonios = () => {
             />
           </svg>
         </div>
-        <div className="col d-flex justify-content-center align-items-strench p-4">
-          <div className="col-12 col-md-12 col-lg-6 d-flex flex-row mx-md-4 card-testimonios">
+        <div className="col-12 col-md-6 col-lg-8 d-flex justify-content-center align-items-strench order-1">
+          <div className="col col-md-12 col-lg-6 d-flex flex-row mx-md-4 card-testimonios">
             <div className="col-4 d-flex align-items-start">
               <img
                 src={imgTestimonio1}
@@ -75,7 +75,7 @@ const Testimonios = () => {
             </div>
           </div>
         </div>
-        <div className="col-auto d-none d-sm-block">
+        <div className="col-auto order-3 order-md-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="106"

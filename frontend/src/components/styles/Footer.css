@@ -1,61 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:ital,wght@1,200&display=swap');
-
-
-
-.Footer {
-    background: linear-gradient(0deg, #8D79C5 0%, #8D79C5 100%);
+.footer {
+  background-color: var(--teal);
+  color: white;
 }
 
 .mapa {
-
-    border-radius: 25px;
-    background: #E0B0E5;
-
-
-    width: 396px;
-    height: 254px;
-    flex-shrink: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
 }
 
-
-.logofooter {
-
-    border-radius: 50%;
-    width: 15%;   
-}
-
-.letrafooter{
-
-   color: #FFF;
-   font-family: 'Poppins', sans-serif;
-   font-size: 15px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: normal;
-   width: max-content;
-   align-items: center;
-}
-
-.fuente-footer{
-
- 
-    color: #FFF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-
-}
-
-.icon{
-
-    width: 55.684px;
-    height: 46px;
-    flex-shrink: 0;
-    text-align: center;
-    justify-content: center;
-
-
-
+.text-logo-copyright {
+ font-size: 1.3rem;
+ font-weight: 600;
 }

@@ -1,24 +1,17 @@
-.tittle-shape4{
-
-    position: relative;
-    background-color: #FFD700;
-
-    border-radius: 23px;
-    padding: 16px;
-    width: 298px;
-    margin-bottom: 30px;
-
-
+.formulario {
+  border-radius: 25px;
+  border: 2px solid var(--teal);
+  padding: 18px;
 }
 
-.formulario{
-
-    border-radius: 25px;
-    border: 2px solid #8D79C5; 
+.formulario::placeholder{
+  color: #A5A1A1;
 }
 
-.formulario-enviar {
-
-    border-radius: 40px;
-     background: #8D79C5;
+.btn-enviar {
+  border-radius: 30px;
+  background: var(--orange);
+  color: white;
+  padding: 20px;
+  font-size: 0.8rem;
 }
