@@ -1,0 +1,15 @@
+.img-programa {
+  width: auto;
+  height: 296;
+  border-radius: 25;
+}
+
+.encabezado-texto-programas {
+  color: var(--teal);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.texto-programas {
+  font-size: 0.8rem;
+}

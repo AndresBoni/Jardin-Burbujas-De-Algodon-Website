@@ -1,0 +1,7 @@
+.card-testimonios {
+  border: 2px solid var(--purple);
+  border-radius: 25px;
+  justify-content: center;
+  padding: 32px;
+  font-size: 0.8rem;
+}

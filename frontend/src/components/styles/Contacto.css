@@ -1,0 +1,24 @@
+.tittle-shape4{
+
+    position: relative;
+    background-color: #FFD700;
+
+    border-radius: 23px;
+    padding: 16px;
+    width: 298px;
+    margin-bottom: 30px;
+
+
+}
+
+.formulario{
+
+    border-radius: 25px;
+    border: 2px solid #8D79C5; 
+}
+
+.formulario-enviar {
+
+    border-radius: 40px;
+     background: #8D79C5;
+}
