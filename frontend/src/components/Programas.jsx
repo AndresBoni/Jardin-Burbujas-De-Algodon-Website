@@ -12,7 +12,7 @@ const Programas = () => {
       </div>
       <div class="row d-flex">
         <div class="col-md-3 d-flex flex-column justify-content-evenly ">
-          <span className="encabezado-texto-programas">
+          <span className="encabezado-texto-programas text-center text-md-start">
             Mira nuestros Programas
           </span>
           <p className="texto-programas">
