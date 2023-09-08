@@ -5,10 +5,6 @@
   overflow: hidden;
 }
 
-.container-header {
-  min-height: calc(94vh - (var(--navbar-height)));
-}
-
 .text-brand {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
@@ -17,6 +13,9 @@
 
 .text-brand {
   font-size: 5rem;
+  @media (max-width: 1075px) {
+    font-size: 4.5rem;
+  }
   @media (max-width: 576px) {
     font-size: 3.5rem;
   }
