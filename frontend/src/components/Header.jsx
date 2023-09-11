@@ -12,15 +12,11 @@ const Header = () => {
         <div className="col-10 col-auto d-flex align-items-center flex-column gap-3">
           <span className="text-brand">Playground</span>
           <span className="text-slogan text-center -text-lg-start">
-            Donde los niños son nuestro futuro
+            El futuro de las infancias nos motiva a crear un presente de calidad
           </span>
           <div className="row d-flex col-12 col-lg-10 col-xl-8 text-xl-center">
             <div className="text text-wrap">
-              ¡Bienvenidos a nuestro cálido y estimulante{" "}
-              <b>Instituto Playground!</b>
-              <br />
-              Aquí, cada niño es una semilla lista para crecer y florecer en un
-              ambiente educativo lleno de alegría y descubrimiento.
+              Te damos la bienvenida a nuestro Jardín de Infantes, donde propiciamos calidez y educación acompañando el proceso de aprendizaje de cada niño/a a su tiempo.
             </div>
           </div>
           <button className="btn btn-orange rounded-pill d-flex justify-content-center my-4">
