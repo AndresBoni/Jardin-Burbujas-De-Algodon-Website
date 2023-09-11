@@ -51,7 +51,7 @@ const Equipo = () => {
           <span>Nombre del integrante</span>
           <span>Rol desempeñado</span>
         </div>
-        <div className="col d-flex flex-column p-4">
+        <div className="col d-flex flex-column p-4 d-none d-md-block">
           <img
             src={imgCircle5}
             className="img-fluid rounded-circle p-4 d-none d-md-block"
@@ -60,7 +60,7 @@ const Equipo = () => {
           <span>Nombre del integrante</span>
           <span>Rol desempeñado</span>
         </div>
-        <div className="col d-flex flex-column p-4">
+        <div className="col d-flex flex-column p-4 d-none d-md-block">
           <img
             src={imgCircle6}
             className="img-fluid rounded-circle p-4 d-none d-md-block"
@@ -69,7 +69,7 @@ const Equipo = () => {
           <span>Nombre del integrante</span>
           <span>Rol desempeñado</span>
         </div>
-        <div className="col d-flex flex-column p-4">
+        <div className="col d-flex flex-column p-4 d-none d-md-block">
           <img
             src={imgCircle7}
             className="img-fluid rounded-circle p-4 d-none d-md-block"
@@ -78,7 +78,7 @@ const Equipo = () => {
           <span>Nombre del integrante</span>
           <span>Rol desempeñado</span>
         </div>
-        <div className="col d-flex flex-column p-4">
+        <div className="col d-flex flex-column p-4 d-none d-md-block">
           <img
             src={imgCircle8}
             className="img-fluid rounded-circle p-4 d-none d-md-block"

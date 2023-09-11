@@ -14,31 +14,31 @@ const Contacto = () => {
               type="name"
               className="form-control formulario"
               id="nameInput"
-              placeholder="Nombre y apellido"
+              placeholder="* Nombre y apellido"
             />
             <input
               type="tel"
               className="form-control formulario"
               id="telInput"
-              placeholder="Numero"
+              placeholder="Telefono"
             />
             <input
               type="email"
               className="form-control formulario"
               id="emailInput"
-              placeholder="email"
+              placeholder="* Email"
             />
             <textarea
               name="comment"
               id="commentInput"
               className="form-control formulario"
-              placeholder="comentarios:"
+              placeholder="* ¿Cómo te podemos ayudar?"
               rows={4}
             >
             </textarea>
             <button 
               className="form-control btn-enviar">
-              Enviar Consulta
+              Enviar consulta
             </button>
           </form>
         </div>

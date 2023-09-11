@@ -21,8 +21,7 @@ const Instalaciones = () => {
       </div>
       <div class="row">
         <div class="col text-center">
-          Te mostramos fotografías de las aulas, áreas de juego y otros espacios
-          recreativos para que puedan disfrutar aprendiendo al máximo
+        Te mostramos los distintos espacios que forman parte de nuestro Jardín con material específicamente diseñado para el desarrollo motriz, psicológico y emocional del niño/a, con la correspondiente calefacción / ventilación.
         </div>
       </div>
       <div className="row row-cols-2 row-cols-sm-4 row-cols-md-6">
