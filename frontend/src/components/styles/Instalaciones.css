@@ -1,19 +1,16 @@
-.tittle-shape {
+.image-container {
   position: relative;
-  background-color: #c2e9fa;
-  border-radius: 23px;
-  padding: 16px;
-  width: 298px;
-  margin-bottom: 30px;
+  overflow: hidden;
 }
 
-.tittle {
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  font-weight: 600;
-  color: #434343;
-  margin-top: -10px;
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  transition: 0.3s; 
+}
+
+.image-container:hover img {
+    filter: brightness(70%);
+    cursor: pointer;
 }
