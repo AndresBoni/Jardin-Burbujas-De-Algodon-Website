@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles/Footer.css";
-import mapa from "../assets/img/mapa.jpg";
 import logo from "../assets/logo.png";
 
 const Footer = () => {
@@ -10,12 +9,24 @@ const Footer = () => {
         <div className="row">
           <div className="col-12 col-lg-8 d-flex flex-row gap-4">
             <div className="col-5">
-              <img src={mapa} alt="mapa" className="mapa" />
+              <div class="col">
+                <div className="mapa overflow-hidden">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Plaza%20Independencia%20Montevideo+(Playground)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ></iframe>
+                </div>
+              </div>
             </div>
             <div className="col-7 d-flex flex-column gap-4 ">
-              <span>Acercate a nuestro instituto</span>
-              <span>Direccion Calle falsa 123</span>
-              <span>Horarios de atencin: 9:00 a 18:00</span>
+              <span>Acércate a nuestro instituto</span>
+              <span>Dirección: Calle falsa 123</span>
+              <span>Horarios de atención: 9:00 a 18:00</span>
               <span>Teléfono: 11-12345678</span>
             </div>
           </div>
@@ -45,14 +56,21 @@ const Footer = () => {
             </svg>
           </div>
           <div className="col-12 d-flex align-items-center justify-content-center justify-content-lg-start px-2 mt-4 py-4 py-lg-0 gap-2">
-          <img
-            src={logo}
-            alt="Logo"
-            className="logo-img my-4"
-            width={"48px"}
-            height={"48px"}
-          />
-          <span className="text-logo-copyright my-4 ms-3">© 2023 Playground</span>
+            <img
+              src={logo}
+              alt="Logo"
+              className="logo-img my-4"
+              width={"48px"}
+              height={"48px"}
+            />
+            <span
+              className="text-logo-copyright my-4 ms-3"
+              onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+              }
+            >
+              © 2023 Playground
+            </span>
           </div>
         </div>
       </div>
