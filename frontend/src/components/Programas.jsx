@@ -10,8 +10,8 @@ const Programas = () => {
       <div className="row d-flex justify-content-center">
         <div className="col-auto title text-center">Programas Educativos</div>
       </div>
-      <div class="row d-flex">
-        <div class="col-lg-4 d-flex flex-column justify-content-evenly ">
+      <div className="row d-flex">
+        <div className="col-lg-4 d-flex flex-column justify-content-evenly ">
           <p>
             Nuestra institución se propone facilitar la maduración personal,
             emocional y social de cada alumno/a; desarrollar su pensamiento
@@ -31,7 +31,7 @@ const Programas = () => {
             familias con jornadas laborales extensas.
           </p>
         </div>
-        <div class="col-lg-8 d-flex justify-content-evenly">
+        <div className="col-lg-8 d-flex justify-content-evenly">
           <div className="col-3">
             <img src={imgRectangleTeal} className="img-fluid mb-2" alt="" />
             <b>Actividades Curriculares Obligatorias</b>

@@ -55,8 +55,8 @@ const Testimonios = () => {
           ]}
           mobileBreakpoint={670}
         >
-          {testimonios.map((testimonio) => (
-            <Carousel.Item>
+          {testimonios.map((testimonio, index) => (
+            <Carousel.Item key={index}>
               <TestimoniosCard
                 img={testimonio.img}
                 review={testimonio.review}
