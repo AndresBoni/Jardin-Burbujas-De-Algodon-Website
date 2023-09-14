@@ -28,8 +28,8 @@ const Instalaciones = () => {
       <div className="row d-flex justify-content-center">
         <div className="col-auto title">Instalaciones</div>
       </div>
-      <div class="row">
-        <div class="col text-center">
+      <div className="row">
+        <div className="col text-center">
           Te mostramos los distintos espacios que forman parte de nuestro Jardín
           con material específicamente diseñado para el desarrollo motriz,
           psicológico y emocional del niño/a, con la correspondiente calefacción

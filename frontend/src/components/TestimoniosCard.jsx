@@ -2,7 +2,6 @@ import React from "react";
 import "./styles/Testimonios.css";
 
 const TestimoniosCard = ({ img, review, author }) => {
-  console.log(img, review, author);
   return (
     <div className="col d-flex flex-column h-100">
       <div className="col d-flex flex-row card-testimonios">

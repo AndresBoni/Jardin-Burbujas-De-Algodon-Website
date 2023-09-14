@@ -71,8 +71,8 @@ const Noticias = () => {
           ]}
           mobileBreakpoint={670}
         >
-          {noticias.map((noticia) => (
-            <Carousel.Item>
+          {noticias.map((noticia, index) => (
+            <Carousel.Item key={index}>
               <NoticiasCard
                 title={noticia.title}
                 img={noticia.img}
