@@ -31,7 +31,7 @@ const Programas = () => {
             familias con jornadas laborales extensas.
           </p>
         </div>
-        <div className="col-lg-8 d-flex justify-content-evenly">
+        <div className="col-lg-8 d-flex justify-content-between justify-content-lg-evenly">
           <div className="col-3">
             <img src={imgRectangleTeal} className="img-fluid mb-2" alt="" />
             <b>Actividades Curriculares Obligatorias</b>
