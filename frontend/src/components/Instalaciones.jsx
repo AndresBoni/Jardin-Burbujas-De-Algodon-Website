@@ -15,12 +15,12 @@ import foto11 from "../assets/img/imgInstalaciones11.png";
 import foto12 from "../assets/img/imgInstalaciones12.png";
 
 const Instalaciones = () => {
-  const [show, setShow] = useState(false);
+  const [showModalInstalaciones, setShowModalInstalaciones] = useState(false);
   const [selectedPhotoSrc, setSelectedPhotoSrc] = useState("");
 
   const handlePhotoClick = (src) => {
     setSelectedPhotoSrc(src);
-    setShow(true);
+    setShowModalInstalaciones(true);
   };
 
   return (
@@ -135,8 +135,8 @@ const Instalaciones = () => {
         </div>
       </div>
       <Modal
-        show={show}
-        onHide={() => setShow(false)}
+        show={showModalInstalaciones}
+        onHide={() => setShowModalInstalaciones(false)}
         dialogClassName="modal-90w"
         aria-labelledby="images-modal"
       >
@@ -148,7 +148,7 @@ const Instalaciones = () => {
             src={selectedPhotoSrc} // Utiliza la fuente seleccionada aquí
             className="img-fluid "
             alt="imagen nuestras instalaciones"
-            onClick={() => setShow(true)}
+            onClick={() => setShowModalInstalaciones(true)}
           />
         </Modal.Body>
       </Modal>

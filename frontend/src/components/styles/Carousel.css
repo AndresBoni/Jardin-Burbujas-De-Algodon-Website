@@ -1,0 +1,41 @@
+.arrow-button {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: border-color 0.3s ease; /* Agregar una transición para el cambio de color */
+  }
+  
+  .arrow-button::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+  }
+  
+  .arrow-button:hover::after {
+    border-color: #333; /* Cambiar el color al pasar el mouse */
+  }
+  
+  .arrow-button .right {
+    right: -40px; 
+    transform: translateY(-50%) rotate(45deg); /* Transformación para la flecha derecha */
+  }
+  
+  .arrow-button .left {
+    left: -40px; /* Posición a la izquierda */
+
+    transform: translateY(-50%) rotate(-135deg); /* Transformación para la flecha izquierda */
+  }
+  
