@@ -8,7 +8,7 @@ const Contacto = () => {
         <div className="col-auto title">Contacto</div>
       </div>
       <div className="row d-flex justify-content-center">
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-lg-8">
           <form className="d-flex flex-column gap-4">
             <input
               type="name"
