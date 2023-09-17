@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import "./styles/Menu.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Menu = () => {
+  const basePath = "/Jardin-Burbujas-De-Algodon-Website";
+  const [expanded, setExpanded] = useState(false); // Estado para el menú desplegable
+
+  const closeMenu = () => {
+    setExpanded(false); // Cierra el menú desplegable al hacer clic en un enlace
+  };
   return (
     <Navbar
       collapseOnSelect
@@ -17,6 +24,7 @@ const Menu = () => {
           onClick={() =>
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
           }
+          className="navbar-brand"
         >
           <img
             src={logo}
@@ -30,7 +38,7 @@ const Menu = () => {
           </span>
         </Navbar.Brand>
         <Nav className="align-items-center order-lg-last d-none d-xl-block">
-          <Nav.Link href="#contacto">
+          <Nav.Link href={`${basePath}/#contacto`}>
             <button
               type="button"
               className="btn btn-outline-success rounded-pill btn-whatsapp d-flex align-items-center"
@@ -49,37 +57,50 @@ const Menu = () => {
             </button>
           </Nav.Link>
         </Nav>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+        />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
+          in={expanded}
         >
           <Nav className="ml-auto text-nowrap align-items-center">
             <Nav.Link
+              as={Link}
+              to={`${basePath}/`}
+              onClick={() => {
+                closeMenu(); // Cierra el menú al hacer clic en un enlace
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
               className="p-4"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-              }
-              href="#"
             >
               Home
             </Nav.Link>
-            <Nav.Link href="#programas" className="p-4">
+            <Nav.Link as={Link} to={`${basePath}/#programas`} className="p-4">
               Programas
             </Nav.Link>
-            <Nav.Link href="#instalaciones" className="p-4">
+            <Nav.Link
+              as={Link}
+              to={`${basePath}/#instalaciones`}
+              onClick={closeMenu}
+              className="p-4"
+            >
               Instalaciones
             </Nav.Link>
-            <Nav.Link href="#equipo" className="p-4">
+            <Nav.Link as={Link} to={`${basePath}/#equipo`} onClick={closeMenu} className="p-4">
               Equipo Docente
             </Nav.Link>
-            <Nav.Link href="#noticias" className="p-4">
+            <Nav.Link as={Link} to={`${basePath}/#noticias`} onClick={closeMenu} className="p-4">
               Noticias
             </Nav.Link>
           </Nav>
           <Nav className="align-items-center d-block d-md-none">
             <Nav.Link
-              href="#contacto"
+              as={Link}
+              to={`${basePath}/#contacto`}
+              onClick={closeMenu}
               className="d-flex justify-content-center"
             >
               <button
