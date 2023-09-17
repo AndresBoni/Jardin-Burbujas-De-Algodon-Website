@@ -8,8 +8,11 @@ import imgCircle6 from "../assets/img/imgCircle6.png";
 import imgCircle7 from "../assets/img/imgCircle7.png";
 import imgCircle8 from "../assets/img/imgCircle8.png";
 import EquipoCard from "./EquipoCard";
-import Carousel from "react-grid-carousel";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import { Grid, Pagination } from "swiper/modules";
 const Equipo = () => {
   const [showDots, setShowDots] = useState(true);
 
@@ -76,38 +79,25 @@ const Equipo = () => {
       </div>
       <div className="row justify-content-center">
         {showDots ? (
-          <Carousel
-            cols={4}
-            gap={11}
-            loop
-            showDots={showDots}
-            hideArrow
-            responsiveLayout={[
-              {
-                breakpoint: 1200,
-                cols: 3,
-                rows: 2,
-              },
-              {
-                breakpoint: 990,
-                cols: 2,
-                rows: 2,
-              },
-            ]}
-            mobileBreakpoint={0}
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Grid, Pagination]}
           >
             {equipo.map((docente, index) => (
-              <Carousel.Item key={index}>
+              <SwiperSlide key={index}>
                 <EquipoCard
                   img={docente.img}
                   nombre={docente.nombre}
                   rol={docente.rol}
                 />
-              </Carousel.Item>
+              </SwiperSlide>
             ))}
-          </Carousel>
+          </Swiper>
         ) : (
-          // Si showDots es falso, muestra las tarjetas sin el carrusel
           equipo.map((docente, index) => (
             <div key={index} className="col-md-3 mb-4">
               <EquipoCard

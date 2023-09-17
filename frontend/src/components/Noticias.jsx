@@ -1,11 +1,9 @@
 import React from "react";
-import Carousel from "react-grid-carousel";
-
-import "./styles/Carousel.css";
 import noticias1 from "../assets/img/noticias1.png";
 import noticias2 from "../assets/img/noticias2.jpg";
 import noticias3 from "../assets/img/noticias3.png";
 import NoticiasCard from "./NoticiasCard";
+import SliderNavigation from "./Slider";
 
 const Noticias = () => {
   const noticias = [
@@ -53,34 +51,33 @@ const Noticias = () => {
         <div className="col-auto title">Noticias</div>
       </div>
       <div className="row d-flex align-items-center my-4">
-        <Carousel
-          cols={3}
-          rows={1}
-          gap={11}
-          loop
-          autoplay={6000}
-          responsiveLayout={[
-            {
-              breakpoint: 1200,
-              cols: 3,
-            },
-            {
-              breakpoint: 990,
-              cols: 2,
-            },
-          ]}
-          mobileBreakpoint={670}
-        >
-          {noticias.map((noticia, index) => (
-            <Carousel.Item key={index}>
-              <NoticiasCard
-                title={noticia.title}
-                img={noticia.img}
-                text={noticia.text}
-              />
-            </Carousel.Item>
+        <SliderNavigation
+          slides={noticias.map((noticia, index) => (
+            <NoticiasCard
+              key={index}
+              title={noticia.title}
+              img={noticia.img}
+              text={noticia.text}
+            />
           ))}
-        </Carousel>
+          swiperProps={{
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            },
+            id: "noticias",
+          }}
+        />
       </div>
     </div>
   );

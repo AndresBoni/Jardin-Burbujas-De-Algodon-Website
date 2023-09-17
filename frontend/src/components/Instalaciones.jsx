@@ -36,7 +36,7 @@ const Instalaciones = () => {
           / ventilación.
         </div>
       </div>
-      <div className="row row-cols-2 row-cols-sm-4 row-cols-md-6">
+      <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6">
         <div className="image-container">
           <img
             src={foto1}

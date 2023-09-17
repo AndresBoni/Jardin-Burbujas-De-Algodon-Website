@@ -1,25 +1,35 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Grid } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/grid";
 import "./styles/Slider.css";
 
-const Slider = () => {
-
+const Slider = ({ slides, hideArrows, swiperProps }) => {
   return (
-    <div className="container">
-      <div className="swiper mySwiper">
-        <div className="swiper-wrapper">
-          <div className="swiper-slide">Slide 1</div>
-          <div className="swiper-slide">Slide 2</div>
-          <div className="swiper-slide">Slide 3</div>
-          <div className="swiper-slide">Slide 4</div>
-          <div className="swiper-slide">Slide 5</div>
-          <div className="swiper-slide">Slide 6</div>
-          <div className="swiper-slide">Slide 7</div>
-          <div className="swiper-slide">Slide 8</div>
-          <div className="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
+    <div className="swiper-container">
+      <Swiper
+        modules={[Pagination, Grid, hideArrows ? null : Navigation]}
+        navigation={{
+          nextEl: `.swiper-button-next-${swiperProps.id}`,
+          prevEl: `.swiper-button-prev-${swiperProps.id}`,
+        }}
+        spaceBetween={10}
+        {...swiperProps}
+        className={`mySwiper swiper-${swiperProps.id}`}
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>{slide}</SwiperSlide>
+        ))}
+      </Swiper>
+      <div
+        className={`swiper-button-prev swiper-button-prev-${swiperProps.id}`}
+      ></div>
+      <div
+        className={`swiper-button-next swiper-button-next-${swiperProps.id}`}
+      ></div>
     </div>
   );
 };
