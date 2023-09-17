@@ -1,8 +1,9 @@
 import React from "react";
 import imgTestimonio1 from "../assets/imgTestimonio1.png";
 import imgTestimonio2 from "../assets/imgTestimonio2.png";
-import Carousel from "react-grid-carousel";
 import TestimoniosCard from "./TestimoniosCard";
+import SliderNavigation from "./Slider";
+
 const Testimonios = () => {
   const testimonios = [
     {
@@ -37,34 +38,29 @@ const Testimonios = () => {
         <div className="col-auto title">Testimonios</div>
       </div>
       <div className="col my-4">
-        <Carousel
-          cols={2}
-          rows={1}
-          gap={11}
-          loop
-          autoplay={6000}
-          responsiveLayout={[
-            {
-              breakpoint: 1200,
-              cols: 2,
-            },
-            {
-              breakpoint: 990,
-              cols: 1,
-            },
-          ]}
-          mobileBreakpoint={670}
-        >
-          {testimonios.map((testimonio, index) => (
-            <Carousel.Item key={index}>
-              <TestimoniosCard
-                img={testimonio.img}
-                review={testimonio.review}
-                author={testimonio.author}
-              />
-            </Carousel.Item>
+        <SliderNavigation
+          slides={testimonios.map((testimonio, index) => (
+            <TestimoniosCard
+              key={index}
+              img={testimonio.img}
+              review={testimonio.review}
+              author={testimonio.author}
+            />
           ))}
-        </Carousel>
+          swiperProps={{
+            breakpoints: {
+              980: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+              1600: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            },
+            id: "testimonios",
+          }}
+        />
       </div>
     </div>
   );
