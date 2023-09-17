@@ -2,7 +2,7 @@
 .swiper-container {
   position: relative;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 50px;
   display: flex;
 }
 
@@ -15,14 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-button-prev {
-  left: -10px;
-}
-
-.swiper-button-next {
-  right: -10px;
 }
 
 .swiper-button-disabled {

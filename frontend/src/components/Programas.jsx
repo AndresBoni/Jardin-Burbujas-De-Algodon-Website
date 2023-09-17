@@ -34,32 +34,37 @@ const Programas = () => {
         <div className="col-lg-8 d-flex justify-content-between justify-content-lg-evenly">
           <div className="col-3">
             <img src={imgRectangleTeal} className="img-fluid mb-2" alt="" />
-            <b>Actividades Curriculares Obligatorias</b>
-            <br />
-            Matemáticas <br />
-            Prácticas del lenguaje <br />
-            Valores e inteligencia emocional<br />
-            Inglés <br />
-            Música <br />
-            Educación física<br />
-            <br />
+            <span className="titulo-actividades">
+              Actividades Curriculares Obligatorias
+            </span>
+            <ul>
+              <li>Matemáticas</li>
+              <li>Prácticas del lenguaje</li>
+              <li>Valores e inteligencia emocional</li>
+              <li>Inglés </li>
+              <li>Música</li>
+              <li>Educación física</li>
+            </ul>
           </div>
           <div className="col-3">
             <img src={imgRectanglePink} className="img-fluid mb-2" alt="" />
-            <b>Actividades Extracurriculares</b>
-            <br />
-            Talleres culturales:<br />
-            Plástica y arte <br />
-            Cuentos y literatura<br />
-            
+            <span className="titulo-actividades">
+              Actividades Extracurriculares
+            </span>
+            <ul>
+              <li>Talleres culturales:</li>
+
+              <li>Plástica y arte </li>
+              <li>Cuentos y literatura</li>
+            </ul>
           </div>
           <div className="col-3">
             <img src={imgRectangleYellow} className="img-fluid mb-2" alt="" />
-            <br />
-            Cocina y alimentación saludable<br />
-            Robótica y/o Programación<br />
-            Huerta<br />
-            
+            <ul>
+              <li>Cocina y alimentación saludable</li>
+              <li>Robótica y/o Programación</li>
+              <li>Huerta</li>
+            </ul>
           </div>
         </div>
       </div>

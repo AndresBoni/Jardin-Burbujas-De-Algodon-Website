@@ -80,12 +80,23 @@ const Equipo = () => {
       <div className="row justify-content-center">
         {showDots ? (
           <Swiper
-            slidesPerView={3}
+            slidesPerView={2}
             spaceBetween={30}
             pagination={{
               clickable: true,
             }}
             modules={[Grid, Pagination]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              }
+              
+            }}
           >
             {equipo.map((docente, index) => (
               <SwiperSlide key={index}>
