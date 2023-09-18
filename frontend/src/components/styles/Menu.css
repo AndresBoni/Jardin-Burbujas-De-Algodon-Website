@@ -28,6 +28,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.navbar-brand {
+  cursor: pointer;
+}
+
 .navbar-nav .nav-link {
   color: var(--teal) !important;
   font-size: 0.8rem;

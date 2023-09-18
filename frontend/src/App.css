@@ -53,8 +53,19 @@ a {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   margin: 1.4rem auto;
+  @media (max-width: 576px) {
+    font-size: 2.4rem;
+  }
 }
+
 
 .section {
   margin-bottom: 4rem;
+}
+
+
+ul, ol {
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
 }

@@ -1,73 +1,83 @@
 import React from "react";
-import "./styles/Noticias.css";
 import noticias1 from "../assets/img/noticias1.png";
 import noticias2 from "../assets/img/noticias2.jpg";
 import noticias3 from "../assets/img/noticias3.png";
+import NoticiasCard from "./NoticiasCard";
+import SliderNavigation from "./Slider";
 
 const Noticias = () => {
+  const noticias = [
+    {
+      title:
+        " Jardín de Infantes: Construyendo sonrisas y acompañando el crecimiento en Cada Paso.",
+      img: noticias2,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam necessitatibus aperiam dolor quisquam quaerat laborum officia, commodi reprehenderit quam minima voluptatum labore maiores possimus sed ipsa nam natus rerum in atque doloremque quas rem, reiciendis unde? Atque veniam quibusdam nemo eum necessitatibus explicabo? Modi animi maiores veritatis doloremque corrupti?",
+    },
+    {
+      title:
+        "¡Abiertas las Inscripciones! Únete a Nuestra Familia en el Jardín de Infantes",
+      img: noticias1,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam necessitatibus aperiam dolor quisquam quaerat laborum officia, commodi reprehenderit quam minima voluptatum labore maiores possimus sed ipsa nam natus rerum in atque doloremque quas rem, reiciendis unde? Atque veniam quibusdam nemo eum necessitatibus explicabo? Modi animi maiores veritatis doloremque corrupti?",
+    },
+    {
+      title:
+        "¡Prepárate para las Vacaciones Invernales! Diversión y aprendizaje continúan en...",
+      img: noticias3,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam necessitatibus aperiam dolor quisquam quaerat laborum officia, commodi reprehenderit quam minima voluptatum labore maiores possimus sed ipsa nam natus rerum in atque doloremque quas rem, reiciendis unde? Atque veniam quibusdam nemo eum necessitatibus explicabo? Modi animi maiores veritatis doloremque corrupti?",
+    },
+    {
+      title:
+        " Jardín de Infantes: Construyendo sonrisas y acompañando el crecimiento en Cada Paso.",
+      img: noticias2,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam necessitatibus aperiam dolor quisquam quaerat laborum officia, commodi reprehenderit quam minima voluptatum labore maiores possimus sed ipsa nam natus rerum in atque doloremque quas rem, reiciendis unde? Atque veniam quibusdam nemo eum necessitatibus explicabo? Modi animi maiores veritatis doloremque corrupti?",
+    },
+    {
+      title:
+        "¡Abiertas las Inscripciones! Únete a Nuestra Familia en el Jardín de Infantes",
+      img: noticias1,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam necessitatibus aperiam dolor quisquam quaerat laborum officia, commodi reprehenderit quam minima voluptatum labore maiores possimus sed ipsa nam natus rerum in atque doloremque quas rem, reiciendis unde? Atque veniam quibusdam nemo eum necessitatibus explicabo? Modi animi maiores veritatis doloremque corrupti?",
+    },
+    {
+      title:
+        "¡Prepárate para las Vacaciones Invernales! Diversión y aprendizaje continúan en...",
+      img: noticias3,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam necessitatibus aperiam dolor quisquam quaerat laborum officia, commodi reprehenderit quam minima voluptatum labore maiores possimus sed ipsa nam natus rerum in atque doloremque quas rem, reiciendis unde? Atque veniam quibusdam nemo eum necessitatibus explicabo? Modi animi maiores veritatis doloremque corrupti?",
+    },
+  ];
+
   return (
     <div className="container section" id="noticias">
       <div className="row d-flex justify-content-center">
         <div className="col-auto title">Noticias</div>
       </div>
-      <div className="row d-flex justify-content-evenly align-items-center my-4">
-        <div className="col-auto order-2 order-md-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="106"
-            height="114"
-            viewBox="0 0 106 114"
-            fill="none"
-          >
-            <path
-              d="M61.8333 33.25L39.75 57L61.8333 80.75"
-              stroke="#F8911E"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+      <div className="row d-flex align-items-center my-4">
+        <SliderNavigation
+          slides={noticias.map((noticia, index) => (
+            <NoticiasCard
+              key={index}
+              title={noticia.title}
+              img={noticia.img}
+              text={noticia.text}
             />
-          </svg>
-        </div>
-        <div className="col-12 col-md-6 col-lg-8 d-flex justify-content-center align-items-strench order-1">
-          <div className="col-12 col-md-6 col-lg-4 mx-md-4 card-noticia">
-            <img src={noticias2} alt="imagen noticia 1" className="w-100" />
-            <span className="d-flex justify-self-center">
-              Jardín de Infantes: Construyendo sonrisas y acompañando el
-              crecimiento en Cada Paso.
-            </span>
-          </div>
-          <div className="d-none d-md-block col-md-6 col-lg-4 mx-md-4 card-noticia">
-            <img src={noticias1} alt="imagen noticia 1" className="w-100" />
-            <span className="d-flex justify-self-center">
-              ¡Abiertas las Inscripciones! Únete a Nuestra Familia en el Jardín
-              de Infantes
-            </span>
-          </div>
-          <div className="d-none col-md-none d-lg-block col-lg-4 mx-md-4 card-noticia">
-            <img src={noticias3} alt="imagen noticia 1" className="w-100" />
-            <span className="d-flex justify-self-center">
-              ¡Prepárate para las Vacaciones Invernales! Diversión y aprendizaje
-              continúan en...
-            </span>
-          </div>
-        </div>
-        <div className="col-auto order-3 order-md-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="106"
-            height="114"
-            viewBox="0 0 106 114"
-            fill="none"
-          >
-            <path
-              d="M44.1667 80.75L66.25 57L44.1667 33.25"
-              stroke="#F8911E"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
+          ))}
+          swiperProps={{
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            },
+            id: "noticias",
+          }}
+        />
       </div>
     </div>
   );

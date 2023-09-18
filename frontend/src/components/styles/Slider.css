@@ -1,0 +1,23 @@
+/* Padding para dejar espacio a las flechas */
+.swiper-container {
+  position: relative;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-disabled {
+  display: none;
+  cursor: not-allowed;
+}

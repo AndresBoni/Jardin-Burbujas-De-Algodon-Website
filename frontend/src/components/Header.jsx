@@ -5,32 +5,27 @@ import imgNinios from "../assets/img-ninos.png";
 const Header = () => {
   return (
     <div
-      className="container-fluid header navbar-margin d-flex p-0"
+      className="container-fluid header navbar-margin d-flex flex-column flex-lg-row justify-content-between p-0"
       id="header"
     >
-      <div className="row p-0 m-0 d-flex justify-content-end ">
-        <div className="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start gap-4 text-center text-lg-start">
+      <div className="col-12 col-lg-6 d-flex flex-grow-1 align-items-center justify-content-center justify-content-lg-end p-4 p-lg-0">
+        <div className="col-10 col-auto d-flex align-items-center flex-column gap-3">
           <span className="text-brand">Playground</span>
-          <span className="text-slogan">
-            Donde los niños son nuestro futuro
+          <span className="text-slogan text-center -text-lg-start">
+            El futuro de las infancias nos motiva a crear un presente de calidad
           </span>
-          <div className="row d-flex col-12 col-sm-10 col-md-10 col-lg-12">
-            <div className="text text-wrap p-3 ">
-              ¡Bienvenidos a nuestro cálido y estimulante{" "}
-              <b>Instituto Playground!</b>
-              <br />
-              Aquí, cada niño es una semilla lista para crecer y florecer en un
-              ambiente educativo lleno de alegría y descubrimiento.
+          <div className="row d-flex col-12 col-lg-10 col-xl-8 text-xl-center">
+            <div className="text text-wrap">
+              Te damos la bienvenida a nuestro Jardín de Infantes, donde propiciamos calidez y educación acompañando el proceso de aprendizaje de cada niño/a a su tiempo.
             </div>
           </div>
           <button className="btn btn-orange rounded-pill d-flex justify-content-center my-4">
             Contáctanos
           </button>
         </div>
-        <div className="col-12 col-lg-6 justify-content-center p-0">
-          {/* Imagen */}
-          <img src={imgNinios} alt="Imagen niña" className="img-header " />
-        </div>
+      </div>
+      <div className="col-12 col-lg-6 justify-content-center p-0">
+        <img src={imgNinios} alt="Imagen niña" className="img-header " />
       </div>
     </div>
   );
