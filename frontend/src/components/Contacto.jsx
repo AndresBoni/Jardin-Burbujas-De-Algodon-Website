@@ -1,7 +1,11 @@
 import React from "react";
 import "./styles/Contacto.css";
+import { handleChange, handleEmail } from "../scripts/send";
 
 const Contacto = () => {
+
+
+
   return (
     <div className="container section" id="noticias">
       <div className="row d-flex justify-content-center">
@@ -11,24 +15,28 @@ const Contacto = () => {
         <div className="col-12 col-lg-8">
           <form className="d-flex flex-column gap-4">
             <input
+              onChange={handleChange}
               type="name"
               className="form-control formulario"
               id="nameInput"
               placeholder="* Nombre y apellido"
             />
             <input
+              onChange={handleChange}
               type="tel"
               className="form-control formulario"
               id="telInput"
               placeholder="Telefono"
             />
             <input
+              onChange={handleChange}
               type="email"
               className="form-control formulario"
               id="emailInput"
               placeholder="* Email"
             />
             <textarea
+              onChange={handleChange}
               name="comment"
               id="commentInput"
               className="form-control formulario"
@@ -37,7 +45,7 @@ const Contacto = () => {
             >
             </textarea>
             <button 
-              className="form-control btn-enviar">
+              className="form-control btn-enviar" onClick={handleEmail}>
               Enviar consulta
             </button>
           </form>
