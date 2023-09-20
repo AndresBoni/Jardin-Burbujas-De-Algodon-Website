@@ -17,9 +17,18 @@ import lombok.NoArgsConstructor;
 public class Mail {
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
+	private int idemail;
 	private String names;
 	private String telephone;
 	private String email;
 	private String message;
+	
+	public Mail(String names, String telephone, String email, String message) {
+		this.names = names;
+		this.telephone = telephone;
+		this.email = email;
+		this.message = message;
+		
+	}
 
 }

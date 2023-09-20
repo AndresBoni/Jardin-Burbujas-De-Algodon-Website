@@ -6,6 +6,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
+import com.idforIdeas.ProyectoJardin.Model.Mail;
+import com.idforIdeas.ProyectoJardin.Repository.mailRepository;
 import com.idforIdeas.ProyectoJardin.Templates.messageHtml;
 
 import jakarta.mail.MessagingException;
@@ -18,16 +20,12 @@ public class serviceEmail {
 	
 	@Autowired
     private JavaMailSender emailSender;
+	private mailRepository mailRepo;
 	
+	
+	//metodo encargado de enviar el email
 	public void sendEmail(String names, String email,String telephone, String message) throws MessagingException {
-//SimpleMailMessage msg = new SimpleMailMessage();
-		
-		/*msg.setFrom("burbujasdealgodon4@gmail.com");
-		msg.setTo("burbujasdealgodon4@gmail.com"); 
-		msg.setSubject(names); 
-		msg.setText(message);
-        
-        emailSender.send(msg);*/
+
 		MimeMessage msg = emailSender.createMimeMessage();
 		String content = messageHtml.TEMPLATE_MESSAGE;
 		
@@ -51,6 +49,11 @@ public class serviceEmail {
 	//Remplazar el codigo en en html
 	private String setCodeInTemplate(String template, int index, String code) {
 		return template.replace("{"+index+"}", code);
+	}
+	
+	//Agregar informacion del mensaje a la base de datos
+	public Mail create(Mail mail) {
+		return mailRepo.save(mail);
 	}
 
 }
