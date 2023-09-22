@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import "./App.css";
+import Nosotros from "./components/Nosotros";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <Nosotros />
       <Programas />
       <Instalaciones />
       <Equipo />
