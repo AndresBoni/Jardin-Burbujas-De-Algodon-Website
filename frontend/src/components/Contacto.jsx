@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/Contacto.css";
 
 const Contacto = () => {
+  const basePath = "/Jardin-Burbujas-De-Algodon-Website";
   return (
     <div className="container section" id="noticias">
       <div className="row d-flex justify-content-center">
