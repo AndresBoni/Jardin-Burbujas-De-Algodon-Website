@@ -9,7 +9,7 @@ const Menu = () => {
   const [expanded, setExpanded] = useState(false); // Estado para el menú desplegable
 
   const closeMenu = () => {
-    setExpanded(false); // Cierra el menú desplegable al hacer clic en un enlace
+    setExpanded(false); 
   };
   return (
     <Navbar
@@ -37,7 +37,8 @@ const Menu = () => {
             Playground
           </span>
         </Navbar.Brand>
-        <Nav className="align-items-center order-lg-last d-none d-xl-block">
+        <Nav className="flex-row align-items-center order-lg-last d-none d-xl-block">
+          
           <Nav.Link href={`${basePath}/#contacto`}>
             <button
               type="button"
@@ -56,6 +57,7 @@ const Menu = () => {
               11-12345678
             </button>
           </Nav.Link>
+          
         </Nav>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -71,7 +73,7 @@ const Menu = () => {
               as={Link}
               to={`${basePath}/`}
               onClick={() => {
-                closeMenu(); // Cierra el menú al hacer clic en un enlace
+                closeMenu(); 
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
               }}
               className="p-4"

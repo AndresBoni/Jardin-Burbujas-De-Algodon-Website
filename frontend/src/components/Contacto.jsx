@@ -3,9 +3,7 @@ import "./styles/Contacto.css";
 import { handleChange, handleEmail } from "../scripts/send";
 
 const Contacto = () => {
-
-
-
+  const basePath = "/Jardin-Burbujas-De-Algodon-Website";
   return (
     <div className="container section" id="noticias">
       <div className="row d-flex justify-content-center">
