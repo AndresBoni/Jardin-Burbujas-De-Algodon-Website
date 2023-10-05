@@ -1,5 +1,8 @@
 import React from "react";
 import "./styles/Programas.css";
+import actividadesCurriculares from '../assets/actividadesCurriculares.png'
+import actividadesExtracurriculares from '../assets/actividadesExtracurriculares.png'
+import talleresOptativos from '../assets/talleresOptativos.png'
 
 const Programas = () => {
   return (
@@ -13,7 +16,7 @@ const Programas = () => {
           id="curriculares"
         >
           <div className="row px-4 p-2">
-          <div className="col-auto icon-programas">icon</div>
+          <div className="col-auto icon-programas-div"><img src={actividadesCurriculares} className="icon-programas" alt="" /></div>
           </div>
           <div className="row px-4 px-2">Actividades Curriculares </div>
           <div className="row px-4 px-2">
@@ -27,7 +30,7 @@ const Programas = () => {
           id="extracurriculares"
         >
           <div className="row px-4 p-2">
-          <div className="col-auto icon-programas">icon</div>
+          <div className="col-auto icon-programas-div"><img src={actividadesExtracurriculares} className="icon-programas" alt="" /></div>
           </div>
           <div className="row px-4 p-2">Actividades Extracurriculares</div>
           <div className="row px-4 p-2">
@@ -40,7 +43,7 @@ const Programas = () => {
           id="opcionales"
         >
           <div className="row px-4 p-2">
-            <div className="col-auto icon-programas">icon</div>
+            <div className="col-auto icon-programas-div"><img src={talleresOptativos} className="icon-programas" alt="" /></div>
           </div>
           <div className="row px-4 p-2">Talleres optativos</div>
           <div className="row px-4 p-2">
