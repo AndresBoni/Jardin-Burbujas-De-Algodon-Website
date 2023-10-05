@@ -1,0 +1,9 @@
+.title-dashboard {
+    color: var(--orange);
+    font-size: 2.2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+}
