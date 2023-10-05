@@ -9,7 +9,7 @@ import Testimonios from "./components/Testimonios";
 import Noticias from "./components/Noticias";
 import Contacto from "./components/Contacto";
 import Footer from "./components/Footer";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./components/dashboard/Dashboard";
 import Login from "./components/Login";
 import "./App.css";
 import Nosotros from "./components/Nosotros";
