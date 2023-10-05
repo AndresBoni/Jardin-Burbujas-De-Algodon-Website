@@ -7,6 +7,7 @@ const EquipoCard = ({ img, nombre, rol }) => {
         src={img}
         className="img-fluid rounded-circle p-4"
         alt={`imagen de docente ${nombre}`}
+        style={{width:'100%', height:'auto'}}
       />
       <span>{nombre}</span>
       <span>{rol}</span>
