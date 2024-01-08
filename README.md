@@ -1,4 +1,4 @@
 # Jardin-Burbujas-De-Algodon-Website
-Sitio web de Jardín de Infantes Burbujas de Algodón
+Project in which I worked as a frontend developer for a kindergarten, focusing on the landing page.
 
-[Visitar](https://andresboni.github.io/Jardin-Burbujas-De-Algodon-Website/)
+[View Demo](https://andresboni.github.io/Jardin-Burbujas-De-Algodon-Website/)
