@@ -1,8 +1,19 @@
-# React + Vite
+# Jardin-Burbujas-De-Algodon-Website
+Project in which I worked as a frontend developer for a kindergarten, focusing on the landing page.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[View Demo](https://andresboni.github.io/Jardin-Burbujas-De-Algodon-Website/)
 
-Currently, two official plugins are available:
+ How to Clone and Launch the Frontend:
+```bash
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Clone the Repository
+git clone https://github.com/AndresBoni/Jardin-Burbujas-De-Algodon-Website.git
+
+# Navigate to Frontend Directory
+cd frontend
+
+# Install Dependencies
+npm install
+
+# Run Development Server
+npm run dev
