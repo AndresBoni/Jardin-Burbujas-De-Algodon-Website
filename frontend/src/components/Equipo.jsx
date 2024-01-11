@@ -31,43 +31,43 @@ const Equipo = () => {
 
   const equipo = [
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "Ana García",
+      rol: "Maestra de Preescolar",
       img: imgCircle1,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "Juan López",
+      rol: "Educador Infantil",
       img: imgCircle2,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "María Rodríguez",
+      rol: "Asistente Pedagógica",
       img: imgCircle3,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "Carlos Martínez",
+      rol: "Profesor de Música",
       img: imgCircle4,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "Laura Sánchez",
+      rol: "Psicopedagoga",
       img: imgCircle5,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "Pedro Fernández",
+      rol: "Monitor de Actividades Lúdicas",
       img: imgCircle6,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "Isabel Herrera",
+      rol: "Coordinadora Pedagógica",
       img: imgCircle7,
     },
     {
-      nombre: "Nombre del integrante",
-      rol: "Rol desempeñado",
+      nombre: "José Torres",
+      rol: "Educador de Apoyo",
       img: imgCircle8,
     },
   ];
@@ -94,8 +94,7 @@ const Equipo = () => {
               768: {
                 slidesPerView: 3,
                 spaceBetween: 40,
-              }
-              
+              },
             }}
           >
             {equipo.map((docente, index) => (

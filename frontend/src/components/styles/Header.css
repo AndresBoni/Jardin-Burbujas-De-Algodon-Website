@@ -57,5 +57,6 @@
 
 .img-header {
   height: 100%;
-  width: 100%;
+  width: 104%;
+  object-fit: contain;
 }

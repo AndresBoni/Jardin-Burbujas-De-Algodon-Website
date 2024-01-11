@@ -16,7 +16,9 @@ const Header = () => {
           </span>
           <div className="row d-flex col-12 col-lg-10 col-xl-8 text-xl-center">
             <div className="text text-wrap">
-              Te damos la bienvenida a nuestro Jardín de Infantes, donde propiciamos calidez y educación acompañando el proceso de aprendizaje de cada niño/a a su tiempo.
+              Te damos la bienvenida a nuestro Jardín de Infantes, donde
+              propiciamos calidez y educación acompañando el proceso de
+              aprendizaje de cada niño/a a su tiempo.
             </div>
           </div>
           <button className="btn btn-orange rounded-pill d-flex justify-content-center my-4">
@@ -24,7 +26,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="col-12 col-lg-6 justify-content-center p-0">
+      <div className="d-flex col-12 col-lg-6 justify-content-center align-items-end p-0 img-container">
         <img src={imgNinios} alt="Imagen niña" className="img-header " />
       </div>
     </div>
