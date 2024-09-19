@@ -42,8 +42,6 @@ const Home = () => {
       <Programas />
       <Instalaciones />
       <Equipo />
-      <Testimonios />
-      <Noticias />
       <Contacto />
       <Footer />
     </>
