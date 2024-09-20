@@ -12,17 +12,17 @@ const Header = () => {
         <div className="col-10 col-auto d-flex align-items-center flex-column gap-3">
           <span className="text-brand">Playground</span>
           <span className="text-slogan text-center -text-lg-start">
-            El futuro de las infancias nos motiva a crear un presente de calidad
+            Nurturing today, shaping a brighter future for tomorrow
           </span>
           <div className="row d-flex col-12 col-lg-10 col-xl-8 text-xl-center">
             <div className="text text-wrap">
-              Te damos la bienvenida a nuestro Jardín de Infantes, donde
-              propiciamos calidez y educación acompañando el proceso de
-              aprendizaje de cada niño/a a su tiempo.
+              Welcome to our lovely Preschool, where we provide warmth and
+              quality education, supporting each child&apos;s learning journey
+              at their own pace.
             </div>
           </div>
           <button className="btn btn-orange rounded-pill d-flex justify-content-center my-4">
-            Contáctanos
+            Contact us
           </button>
         </div>
       </div>

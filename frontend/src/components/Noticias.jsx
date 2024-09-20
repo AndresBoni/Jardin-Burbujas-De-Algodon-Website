@@ -46,7 +46,7 @@ const Noticias = () => {
   ];
 
   return (
-    <div className="container section" id="noticias">
+    <div className="container section" id="news">
       <div className="row d-flex justify-content-center">
         <div className="col-auto title">Noticias</div>
       </div>

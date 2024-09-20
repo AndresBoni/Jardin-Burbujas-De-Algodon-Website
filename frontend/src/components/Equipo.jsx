@@ -31,51 +31,51 @@ const Equipo = () => {
 
   const equipo = [
     {
-      nombre: "Ana García",
-      rol: "Maestra de Preescolar",
+      nombre: "Emily Johnson",
+      rol: "Kaiako",
       img: imgCircle1,
     },
     {
-      nombre: "Juan López",
-      rol: "Educador Infantil",
+      nombre: "Michael Smith",
+      rol: "Kaiako",
       img: imgCircle2,
     },
     {
-      nombre: "María Rodríguez",
-      rol: "Asistente Pedagógica",
+      nombre: "Jessica Jones",
+      rol: "Educational Assistant",
       img: imgCircle3,
     },
     {
-      nombre: "Carlos Martínez",
-      rol: "Profesor de Música",
+      nombre: "Sophia Wilson",
+      rol: "Psychopedagogist",
       img: imgCircle4,
     },
     {
-      nombre: "Laura Sánchez",
-      rol: "Psicopedagoga",
+      nombre: "Willow Anderson",
+      rol: "After-Hours Workshops teacher",
       img: imgCircle5,
     },
     {
-      nombre: "Pedro Fernández",
-      rol: "Monitor de Actividades Lúdicas",
+      nombre: "Isabella Cooper",
+      rol: "Spanish Teacher",
       img: imgCircle6,
     },
     {
-      nombre: "Isabel Herrera",
-      rol: "Coordinadora Pedagógica",
+      nombre: "Joseph Scott",
+      rol: "Teacher Aid",
       img: imgCircle7,
     },
     {
-      nombre: "José Torres",
-      rol: "Educador de Apoyo",
+      nombre: "Sarah Brown",
+      rol: "Music Teacher",
       img: imgCircle8,
     },
   ];
 
   return (
-    <div className="container section" id="equipo">
+    <div className="container section" id="team">
       <div className="row d-flex justify-content-center">
-        <div className="col-auto title">Equipo Docente</div>
+        <div className="col-auto title">Our Team</div>
       </div>
       <div className="row justify-content-center">
         {showDots ? (

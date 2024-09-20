@@ -21,10 +21,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-7 d-flex flex-column gap-4 ">
-              <span>Acércate a nuestro instituto</span>
-              <span>Dirección: Calle falsa 123</span>
-              <span>Horarios de atención: 9:00 a 18:00</span>
-              <span>Teléfono: 11-12345678</span>
+              <span>Visit our centre</span>
+              <span>Address: 156 Maple Street</span>
+              <span>9:00am to 6:30pm, Monday to Friday</span>
+              <span>Call us: 64-123456789</span>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-center mt-4 mt-lg-0">

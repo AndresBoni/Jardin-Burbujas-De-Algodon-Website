@@ -24,16 +24,15 @@ const Instalaciones = () => {
   };
 
   return (
-    <div className="container section" id="instalaciones">
+    <div className="container section" id="centre">
       <div className="row d-flex justify-content-center">
-        <div className="col-auto title">Instalaciones</div>
+        <div className="col-auto title">Our Centre</div>
       </div>
       <div className="row">
         <div className="col text-center">
-          Te mostramos los distintos espacios que forman parte de nuestro Jardín
-          con material específicamente diseñado para el desarrollo motriz,
-          psicológico y emocional del niño/a, con la correspondiente calefacción
-          / ventilación.
+          Explore the various spaces in our Preschool, equipped with materials
+          specifically designed for the motor, psychological, and emotional
+          development of each child.
         </div>
       </div>
       <div className="row row-cols-2 row-cols-md-4 row-cols-lg-6">

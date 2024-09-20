@@ -4,9 +4,9 @@ import "./styles/Contacto.css";
 const Contacto = () => {
   const basePath = "/Jardin-Burbujas-De-Algodon-Website";
   return (
-    <div className="container section" id="noticias">
+    <div className="container section" id="contact">
       <div className="row d-flex justify-content-center">
-        <div className="col-auto title">Contacto</div>
+        <div className="col-auto title">Contact us</div>
       </div>
       <div className="row d-flex justify-content-center">
         <div className="col-12 col-lg-8">
@@ -15,13 +15,13 @@ const Contacto = () => {
               type="name"
               className="form-control formulario"
               id="nameInput"
-              placeholder="* Nombre y apellido"
+              placeholder="* Name and family name"
             />
             <input
               type="tel"
               className="form-control formulario"
               id="telInput"
-              placeholder="Telefono"
+              placeholder="Phone number"
             />
             <input
               type="email"
@@ -33,14 +33,10 @@ const Contacto = () => {
               name="comment"
               id="commentInput"
               className="form-control formulario"
-              placeholder="* ¿Cómo te podemos ayudar?"
+              placeholder="* What can we do for you?"
               rows={4}
-            >
-            </textarea>
-            <button 
-              className="form-control btn-enviar">
-              Enviar consulta
-            </button>
+            ></textarea>
+            <button className="form-control btn-enviar">Send inquiry</button>
           </form>
         </div>
       </div>
